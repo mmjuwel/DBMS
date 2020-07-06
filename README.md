@@ -23,10 +23,14 @@ CustomerID	custName	age	phone
 **5.Finding Data with a condition (<,>,=, <=, >= | IS NULL )**
 > SELECT * FROM Customers
 WHERE CustomerID=001;
+
 OR
+
 SELECT * FROM Customers
 WHERE CustomerID>003;
+
 OR
+
 SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NULL;
