@@ -125,27 +125,31 @@ CustID	CustName	Country	Phone		OrderID	CustID	Date
 							
 							
 **Different Types of SQL JOINs**
-* Here are the different types of the JOINs in SQL:
+Here are the different types of the JOINs in SQL:
 •	(INNER) JOIN: Returns records that have matching values in both tables
 •	LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
 •	RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
 •	FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table 
- *
+
           
 
 **19.Inner Join**
+
 *The INNER JOIN keyword selects records that have matching values in both tables.*
 
 > SELECT Orders.OrderID, Customers.CustomerName
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
 OR
-SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+
+> SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
 FROM ((Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
 INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
 
 **20.Left Join**
+
 *The LEFT JOIN keyword returns all records from the left table (table1), and the matched records from the right table (table2). The result is NULL from the right side, if there is no match.*
 > SELECT Customers.CustomerName, Orders.OrderID
 FROM Customers
@@ -153,23 +157,29 @@ LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 ORDER BY Customers.CustomerName;
 
 **21.Right Join**
+
 *The RIGHT JOIN keyword returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side, when there is no match.*
+
 > SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
 FROM Orders
 RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
 ORDER BY Orders.OrderID;
 
 **22.Full Outer Join**
+
 *The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
 Note: FULL OUTER JOIN can potentially return very large result-sets!
 Tip: FULL OUTER JOIN and FULL JOIN are the same.*
+
 > SELECT Customers.CustomerName, Orders.OrderID
 FROM Customers
 FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID
 ORDER BY Customers.CustomerName
 
 **23.Self Join**
+
 *A self-JOIN is a regular join, but the table is joined with itself.*
+
 > SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
 FROM Customers A, Customers B
 WHERE A.CustomerID <> B.CustomerID
@@ -177,7 +187,9 @@ AND A.City = B.City
 ORDER BY A.City;
 
 **24.Group BY**
+
 *The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country"*
+
 SELECT COUNT(CustomerID), Country
 FROM Customers
 GROUP BY Country
@@ -202,8 +214,10 @@ D> ROP DATABASE databasename;
 > DROP TABLE table_name;
 
 **29.Alter Table**
+
 *The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
 The ALTER TABLE statement is also used to add and drop various constraints on an existing table.*
+
 > ALTER TABLE Customers
 ADD Email varchar(255);
 OR
