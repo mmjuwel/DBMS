@@ -12,7 +12,7 @@ CustomerID	custName	age	phone
 SELECT * FROM customers;
 
 **2.Find Specific Column/(S)**
-SELECT custName, age FROM customers;
+> SELECT custName, age FROM customers;
 
 **3.Find Distinc value of a table**
 SELECT DISTINCT custName FROM Customers;
