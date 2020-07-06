@@ -9,7 +9,7 @@ CustomerID	custName	age	phone
 004	Mahir	21	8457145
 
 **1.Find all data of the table**
-SELECT * FROM customers;
+> SELECT * FROM customers;
 
 **2.Find Specific Column/(S)**
 > SELECT custName, age FROM customers;
@@ -99,8 +99,9 @@ SET customerID=0003;
 > DELETE FROM Customers;
 
 **17.Finding data of similar text of a column**
-> (starting with "a": a% | End With “a”:’%a’ | have "or" in any position: '%or%'| starts with "a" and ends with "o": 'a%o’)
-SELECT * FROM Customers
+
+*(starting with "a": a% | End With “a”:’%a’ | have "or" in any position: '%or%'| starts with "a" and ends with "o": 'a%o’)*
+> SELECT * FROM Customers
 WHERE CustomerName LIKE 'a%';
 OR
 SELECT * FROM Customers
