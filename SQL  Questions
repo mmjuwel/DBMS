@@ -1,0 +1,550 @@
+SQL Interview Questions and Answers for Beginners
+
+
+SQL Interview Questions and Answers for Beginners, SQL is used by Database Developers, Database Administrators, and Database Testers.
+
+Q. What is SQL?
+
+Structured Query Language, an ANSI (American National Standards Institute) standard language for accessing databases.
+
+Using SQL we can Access Oracle, Sybase, DB2, SQL Server, MySQL, DB/400 and other Database Management Systems 
+
+Q. When SQL was appeared?
+
+Structured Query Language was first appeared by IBM in 1974 and it is Free Software(any body can use with free of cost).
+
+Q. Who should learn SQL?
+
+• Database Developers
+
+• Database Testers
+
+• Database Administrators
+
+Q. What are the Usages of SQL?
+
+•    Creating new databases
+•    Creating new tables in a database
+•    Inserting records in a database
+•    Updating records in a database
+•    Deleting records from a database
+•    Retrieving data from a database
+•    Executing queries against a database
+•    Creating stored procedures in a database
+•    Creating views in a database
+•    Setting permissions on tables, procedures, and views
+Etc… 
+
+Q) What are important SQL Language Elements?
+
+Identifiers: Names of Database objects such as tables, views, columns, and databases etc…
+
+Data Types: Define the type of data that is contained by a column.
+
+Constants: Symbols that represent specific data types.
+
+Operators: Perform Arithmetic, Comparison, and Logical Operations.
+
+Functions: Built-in Functions to perform specific operations.
+
+Clauses: Constituent components of statements and queries.
+
+Expressions: Produce either scalar values, or tables consisting of columns and rows of data.
+
+Queries: Retrieve the data based on specific criteria. This is an important element of SQL.
+Statements: 
+
+Q. What is SQL Process?
+
+When we are executing an SQL command for any RDBMS, the system determines the best way to carry out our request and SQL engine figures out how to interpret the task.
+There are various components included in the process. These components are Query Dispatcher, Optimization engines, Classic Query Engine and SQL query engine etc. Classic query engine handles all non-SQL queries but SQL query engine won’t handle logical files. 
+
+Q. Is SQL supports Programming?
+
+Q. What are the subsets of SQL?
+
+•    Data Definition Language
+•    Data Manipulation Language
+•    Data Control Language 
+
+Q. What is Data Definition Language?
+
+Data Definition Language (DDL) allows us to create, alter, and delete database objects such as schemas, tables, views, sequences, catalogs, indexes, and aliases.
+
+Q. What is Data Manipulation Language?
+
+DML is a language that enables users to access and manipulate data.
+
+Data Manipulation Language is used to Perform below Operations:
+•    Insertion of data into the database
+•    Retrieval of data from the database
+•    Updating data in the database
+•    Deletion of data in the database 
+
+Q. What is Data Control Language?
+
+Data Control Language (DCL) allows us to control access to the database. ‘DCL’ commands include-
+‘GRANT’ to allow specific users to perform specified tasks
+‘REVOKE’ to cancel previously denied or granted permissions
+
+SQL for Software Testers
+SQL for Software Testers
+
+SQL Interview Questions and Answers for Beginners
+Q. What is Database?
+
+A database is a systematic collection of data, Databases support storage and manipulation of data, and Databases make data management easy.
+
+Q. What is Table?
+
+A Table in a Relational Database is a predefined format of rows and columns that define an entity.
+Each column contains a different type of attribute and each row corresponds to a single record.
+Each table is provided with a name.
+
+Q. What is Database Management System?
+
+> A database management system, or DBMS, is software designed to assist in maintaining and utilizing large collection of data.
+
+> The alternative to using a DBMS is to store the data in files and write application-specific code to manage it.
+
+Using a DBMS to manage data has many advantages like:
+
+•    Data independence
+•    Efficient data access
+•    Data integrity and security
+•    Data administration
+•    Concurrent access and data recovery
+
+Q. What is Database Engine?
+
+Software that stores and retrieves data in a database. It may be a self-contained program or the part of DBMS that performs the storage and retrieval operations.
+
+Q. What is Database Server?
+
+Database Management Systems provide Database server functionality, database server provides database services to other computer programs or computers.
+
+Q. What is MS Access?
+
+MS Access was launched in 1992 by Microsoft Corporation as part of MS Office.
+Microsoft Access is an entry-level database management software. It is not only inexpensive but also a powerful database for small-scale projects.
+MS Access uses the Jet database engine which utilizes a specific SQL language dialect (sometimes referred to as Jet SQL).
+MS Access comes with the professional edition of MS Office package. MS Access is user-friendly database management system.
+
+Q. What is Oracle?
+
+Oracle is a relational database management system developed by ‘Oracle Corporation and launched in 1977.
+Oracle supports all major Operating systems includes MS Windows. NetWare, UnixWare, OS/2, and most UNIX flavors. 
+
+Q. What is MS SQL Server?
+
+MS SQL Server is a Relational Database Management System developed by Microsoft Inc. Its primary query languages are T-SQL and ANSI SQL. 
+
+Q. What is Sybase?
+
+Sybase is a computer software company, their primary product is Sybase DBMS, which is a relational database management system based upon structured query language. 
+
+Q. What is MySQL?
+
+MySQL is an open source Database Management System, developed by Swedish company MySQL AB.
+MySQL Supports many different platforms including Microsoft Windows, the major Linux distributions, UNIX, and Mac OS X.
+MySQL has free and paid versions, depending on its usage (non-commercial/commercial) and features. MySQL comes with a very fast, multi-threaded, multi-user, and robust SQL database server.
+
+Q. What is DB2?
+
+DB2 is the short name used for DATABASE 2. It is a relational database product developed by IBM. in 1983 
+
+Q. What is DB/400?
+
+It is one of the flavors of IBM DB2 
+
+Q. What are the categories of operators available in SQL?
+
+•    Arithmetic operators
+•    Comparison operators
+•    Logical operators
+ 
+Q. What are Arithmetic operators in SQL?
+
+Operator	Description
++ (Addition )	Adds values
+– (Subtraction)	Subtracts Right side value from Left side value
+* (Multiplication)	Multiplies values on either side of the operator
+/ (Division)	Divides left hand operand by right hand operand
+% (Modulus)	Divides left hand operand by right hand operand and returns remainder
+q. What are Comparison operators in SQL?
+
+For example x = 1, y= 2
+
+Operator    Example
+=             (x = y) is False
+!=            (x != y) is True.
+<>           (x <> y) is true.
+>             (x > y) is False
+<             (x < y) is True
+>=           (x >= y) is False
+<=           (x <= y) is True
+!<            (x !< y) is False
+!>            (x !> y) is True.Note: Comparison Operators return Logical Results
+
+Q. What are Logical operators in SQL?
+
+Operator    Description
+——–        ———–
+NOT           Returns TRUE if the following condition is FALSE. Returns FALSE if  it is TRUE.
+AND           Returns TRUE if both component conditions are TRUE. Returns FALSE if either is FALSE
+OR            Returns TRUE if either component condition is TRUE. Returns FALSE if both are FALSE.
+
+Q. What is a Data Relationship and What are they?
+
+Database Relationship is the connection between the tables in a database. There are 4 types of relationships, and they are:
+
+•    One to One Relationship
+•    One to Many Relationship
+•    Many to One Relationship
+•    Many to Many Relationship
+
+Q. What are Important Data Types in SQL?
+
+Data Type	Syntax
+character	char(x)
+integer	integer
+numeric	numeric(p,s)
+decimal	decimal(p,s)
+float	float(p)
+date	date
+time	time
+character varying	varchar2(x)
+bit	bit(x)
+real	real
+smallint	smallint
+
+Note: I used MS SQL Server to practice these DDL Commands.
+
+Q. What are the Data Definition Language Commands and Operations?
+
+Important Data Definition Language Commands
+
+1) Create
+2) Alter
+3) Drop
+4) Truncate
+5) Rename
+
+Important Data Definition Language Operations
+
+1) Create a Database
+2) Use Database
+3) Rename a Database
+4) Drop Database
+5) Create a Table
+6) Rename Table
+7) Add a Column to exiting Table
+8) Add multiple columns to existing Table
+9) Modify an existing column
+10) Rename a Column
+11) Drop a Column
+12) Truncate a Table
+13) Drop a Table
+
+Note: Download and Install MS SQL Server Express Edition (It is Free Edition) and practice SQL Commands and Operations.
+SQL Interview Questions and Answers for Beginners
+
+Q. How to Create a Database?
+
+Syntax:
+
+Create Database databaseName;
+
+Example:
+
+Create Database gcreddyDB;
+
+Q. How to Select a Database?
+
+Syntax
+
+Use databaseName;
+
+Example:
+
+Use gcreddyDB;
+
+Q. How to Rename a Database?
+
+Syntax
+
+Alter Database databaseName Modify Name = newdatabseName;
+
+Example:
+
+Alter Database gcreddyDB Modify Name = hyderabad
+
+Or
+
+Alter Database gcreddyDB
+Modify Name = hyderabad
+
+Q. How to Drop a Database?
+
+Syntax:
+
+Drop Database databaseName;
+
+Example:
+
+Drop Database gcreddyDB;
+
+Q. How to Create a Table?
+
+Syntax:
+
+Create Table tableName
+(
+column1_name dataType(size),
+column2_name dataType(size),
+.
+.
+.
+);
+
+Example:
+
+Create Table Students
+(
+STID int,
+STName char(50),
+);
+————————————
+View Table info
+Select * from Students
+
+View Table Schema
+Select * from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = ‘Students’;
+
+Q. How to Rename a Table?
+
+Syntax:
+
+EXEC sp_rename ‘old_tablename’, ‘new_tablename’;
+
+Example:
+
+EXEC sp_rename ‘Students’, ‘newStudents’;
+
+Q. How to Add a Column to an Existing Table?
+
+Syntax:
+
+Alter Table table_name add column_name dataType(size);
+
+Example:
+Alter Table newStudents add City char(50);
+
+Q. How to Add multiple columns to an Existing Table?
+
+Syntax:
+
+Alter Table table_name add column1_name dataType(size), column2_name dataType(size);
+
+Or
+Alter Table table_name add
+column1_name dataType(size),
+column2_name dataType(size),
+.
+.;
+
+Example:
+
+Alter Table newStudents add add1 char(100), add2 char(70);
+
+Or
+
+Alter Table newStudents add
+add3 char(100),
+add4 char(70),
+add5 char (100),
+phone int;
+
+Q. How to Modify an existing column?
+
+Syntax:
+
+Alter Table table_name Alter Column column_name dataType(size);
+
+Example:
+
+Alter Table newStudents Alter Column add1 varchar(150);
+
+Q. How to Rename a Column?
+
+Syntax:
+
+EXEC sp_rename ‘table_name.old_column_name’, ‘new_colum_name’;
+
+Example:
+ExEC sp_rename ‘newStudents.phone’, ‘mobile’
+
+Q. How to Drop a Column?
+
+Syntax:
+
+Alter Table table_name Drop Column column_name;
+
+Example:
+
+Alter Table newStudents Drop Column City;
+
+Q. How to Truncate a Table?
+
+Truncate Table command is used to delete complete data from an existing table
+
+Syntax:
+
+Truncate Table table_name;
+
+Example:
+
+Truncate Table newStudents;
+
+Q. How to Drop a Table?
+
+Drop Table command is used to delete complete Table (Data and Table Structure) from the Database.
+
+Syntax:
+
+Drop Table table_name;
+
+Example:
+
+Drop Table newStudents;
+
+Q. How to add new record into a Table?
+
+Using INSERT INTO statement, we can insert new rows
+
+Syntax:
+
+INSERT INTO TABLE_NAME (column1, column2, column3,…columnN)
+VALUES (value1, value2, value3,…valueN)
+
+Q. How to fetch data from a Database Table?
+
+Using SELECT Statement, we can fetch data from a Database Table
+
+Syntax:
+
+SELECT column1, column2, columnN FROM table_name;
+
+Or
+
+SELECT * FROM table_name;
+
+Q. Explain about IN Operator?
+
+The IN operator implements comparison to a list of values, that is, it tests whether a value matches any value in a list of values. IN comparisons have the following general format:
+value-1 [NOT] IN ( value-2 [, value-3] … )
+This comparison tests if value-1 matches value-2 or matches value-3, and so on. It is equivalent to the following logical predicate:
+value-1 = value-2 [ OR value-1 = value-3 ] …
+
+Q. Explain about FROM Clause in SQL?
+
+The FROM clause always follows the SELECT clause. It lists the tables accessed by the query. For example,
+SELECT * FROM s
+When the From List contains multiple tables, commas separate the table names. For example,
+SELECT sp.*, city
+FROM sp, s
+WHERE sp.sno=s.sno
+When the From List has multiple tables, they must be joined together.
+
+Q. What is the parameter substitution symbol used with INSERT INTO command?
+
+The parameter substitution symbol used with INSERT INTO command is &.
+
+Q. What are the various uses of database triggers?
+
+Database triggers can be used to enforce business rules, to maintain derived values and perform value-based auditing.
+
+Q. What is a event handler in sql?
+
+An event handler is a routine that is written to respond to a particular event.
+
+Q. What are two methods of retrieving SQL?
+
+The two methods of retrieving SQL are
+1-Select
+2-using Cursor.
+
+Q. What is a synonym? How is it used?
+
+A synonym is used to reference a table or view by another name. The other name can then be written in the application code pointing to test tables in the development stage and to production entities when the code is migrated. The synonym is linked to the AUTHID that created it.
+
+Q. What is referential integrity?
+
+Referential integrity refers to the consistency that must be maintained between primary and foreign keys, i.e. every foreign key value must have a corresponding primary key value.
+
+Q. Explain the EXPLAIN statement?
+
+The explain statement provides information about the optimizer’s choice of access path of the SQL.
+
+Q. How is the SUBSTR keyword used in SQL?
+
+SUBSTR is used for string manipulation with column name, first position and string length used as arguments. E.g. SUBSTR (NAME, 1 3) refers to the first three characters in the column NAME.
+
+Q. What is the difference between group by and order by?
+
+Group by controls the presentation of the rows, order by controls the presentation of the columns for the results of the SELECT statement.
+
+Q. What is a subselect? Is it different from a nested select?
+
+A subselect is a select that works in conjunction with another select. A nested select is a kind of subselect where the inner select passes to the where criteria for the outer select.
+
+Q. What is the use of CASCADE CONSTRAINTS?
+
+When this clause is used with the DROP command, a parent table can be dropped even when a child table exists.
+
+Q. How do you prevent output from coming to the screen?
+
+The SET option TERMOUT controls output to the screen. Setting TERMOUT OFF turns off screen output. This option can be shortened to TERM.
+
+Q. Can Primary key is a Foreign Key on the same table?
+
+Yes, Primary key is a Foreign Key on the same table.
+
+Q. How do you execute a host operating system command from within SQL?
+
+By use of the exclamation point “!” (in UNIX and some other OS) or the HOST (HO) command.
+
+Q. What is a Cartesian product?
+
+A Cartesian product is the result of an unrestricted join of two or more tables. The result set of a three table Cartesian product will have x * y * z number of rows where x, y, z correspond to the number of rows in each table involved in the join.
+
+Q. How can variables be passed to a SQL routine?
+
+By use of the & symbol. For passing in variables the numbers 1-8 can be used (&1, &2,…,&8) to pass the values after the command into the SQL PLUS session. To be prompted for a specific variable, place the ampersanded variable in the code itself: “select * from dba_tables where owner=&owner_name;” . Use of double ampersands tells SQLPLUS to resubstitute the value for each subsequent use of the variable, a single ampersand will cause a reprompt for the value unless an ACCEPT statement is used to get the value from the user.
+
+Q. What command is used to get back the privileges offered by the GRANT command?
+
+Revoke command is used to get back the privileges offered by the GRANT command.
+
+Q. What are the advantages of procedures?
+
+Advantages of procedures:
+
+• Loaded once and used many times.
+• Performance better coz all SQL statements are sent in one go from the application to the database.
+• Security (no object privileges are given directly).
+• Invoker’s rights are possible.
+• Data integrity, productivity.
+
+Q. What is Parsing?
+
+Parsing checks syntax checks privileges and allocating Private SQL Area.
+
+Q. What is Cursor?
+
+Name or handle to a private SQL area where Oracle parses and fetches query results.
+
+Q) Is SQL supports Conditional and Loop Statements?
+
+No, Basically SQL is a Command based Language, not a procedural language, but it has Operators and built-in Functions.
+
